@@ -1,0 +1,25 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-code-snippet {
+	padding: 0;
+
+	pre {
+		margin: 0;
+	}
+
+	.code-snippet {
+		&_input {
+			width: 100%;
+			height: 100%;
+			padding: 0.5em;
+		}
+	
+		&_content {
+			min-height: 1em;
+		}
+	}
+}

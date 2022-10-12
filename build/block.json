@@ -1,0 +1,29 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "create-block/code-snippet",
+  "version": "0.1.0",
+  "title": "Code Snippet",
+  "category": "widgets",
+  "icon": "html",
+  "description": "Allow to display code snippet.",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "code-snippet",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./script.js",
+  "attributes": {
+    "content": {
+      "type": "string",
+      "source": "html",
+      "selector": ".code-snippet_content"
+    },
+    "contentLanguage": {
+      "type": "string",
+      "default": ""
+    }
+  }
+}
